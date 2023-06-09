@@ -65,7 +65,7 @@ img {
 
 @media (min-width: 56rem) {
     .cards_item {
-        width: 33.3333%;
+        width: 25%;
     }
 }
 
@@ -80,7 +80,7 @@ img {
 
 .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background: #222222;
 }
 
 .card_title {
@@ -175,7 +175,7 @@ img {
     background-color: #ffeba7;
     color: #102770;
     font-family: 'unicons';
-    content: '↬';
+    content: 'X';
     box-shadow: 0 12px 25px 0 rgba(16, 39, 112, .25);
     transition: all 200ms linear;
     opacity: 0;
