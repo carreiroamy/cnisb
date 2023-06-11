@@ -93,6 +93,16 @@ img {
     padding-top: 1rem;
 }
 
+.card_position {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    padding-top: 0rem;
+}
+
 .modal_title {
     color: #000000;
     font-weight: 700;
