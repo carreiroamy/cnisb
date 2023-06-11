@@ -60,12 +60,14 @@ img {
     .cards_item {
         width: 50%;
     }
+
 }
 
 @media (min-width: 56rem) {
     .cards_item {
         width: 33.3333%;
     }
+
 }
 
 
@@ -95,7 +97,7 @@ img {
 
 .card_position {
     color: #ffffff;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -113,6 +115,7 @@ img {
 
 .card_text {
     color: #ffffff;
+    padding-top: 1rem;
     font-size: 0.7rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
@@ -229,6 +232,7 @@ img {
 }
 
 .modal-wrap {
+    font-size: 1rem;
     font-family: 'quicksand';
     font-weight: bolder;
     position: relative;
