@@ -1,4 +1,3 @@
-/* Font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /* Design */
@@ -7,7 +6,6 @@
 *::after {
     box-sizing: border-box;
 }
-
 
 .main {
     max-width: 1200px;
@@ -18,6 +16,10 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+}
+
+p {
+    text-transform: uppercase;
 }
 
 img {
@@ -65,12 +67,13 @@ img {
 
 @media (min-width: 56rem) {
     .cards_item {
-        width: 25%;
+        width: 33.3333%;
     }
 }
 
+
 .card {
-    background-color: white;
+    background-color: #222222;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -81,10 +84,20 @@ img {
 .card_content {
     padding: 1rem;
     background: #222222;
+    text-transform: capitalize;
 }
 
 .card_title {
     color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.modal_title {
+    color: #000000;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -98,16 +111,10 @@ img {
     line-height: 1.5;
     margin-bottom: 1.25rem;
     font-weight: 400;
+
 }
 
-
-
-
-
 /* Please ❤ this if you like it! */
-
-
-
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
@@ -117,15 +124,6 @@ img {
 
 .modal-btn:checked+label,
 .modal-btn:not(:checked)+label {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2;
-    height: 50px;
-    transition: all 200ms linear;
-    border-radius: 4px;
-    width: 240px;
     letter-spacing: 1px;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -144,14 +142,14 @@ img {
     align-self: center;
     border: none;
     cursor: pointer;
-    background-color: #102770;
+    background-color: #4a1070;
     color: #ffeba7;
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
 }
 
 .modal-btn:not(:checked)+label:hover {
     background-color: #ffeba7;
-    color: #102770;
+    color: #4a1070;
 }
 
 .modal-btn:checked+label .uil,
@@ -173,7 +171,7 @@ img {
     line-height: 30px;
     font-size: 18px;
     background-color: #ffeba7;
-    color: #102770;
+    color: #4a1070;
     font-family: 'unicons';
     content: 'X';
     box-shadow: 0 12px 25px 0 rgba(16, 39, 112, .25);
@@ -185,7 +183,7 @@ img {
 
 .modal-btn:checked+label:hover:after,
 .modal-btn:not(:checked)+label:hover:after {
-    background-color: #102770;
+    background-color: #4a1070;
     color: #ffeba7;
 }
 
@@ -225,6 +223,9 @@ img {
 }
 
 .modal-wrap {
+    font-family: 'quicksand';
+    font-weight: bolder;
+    font-size: 22px;
     position: relative;
     display: block;
     width: 100%;
@@ -248,6 +249,18 @@ img {
     display: block;
     width: 100%;
     height: auto;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
 }
 
 .modal-wrap p {
@@ -260,12 +273,10 @@ img {
     transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
 }
 
-
 .modal-btn:checked~.logo img {
     filter: brightness(100%);
     transition: all 250ms linear;
 }
-
 
 @media screen and (max-width: 500px) {
     .modal-wrap {
