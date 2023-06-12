@@ -233,6 +233,7 @@ img {
 
 .modal-wrap {
     font-size: 1rem;
+    line-height: 1px;
     font-family: 'quicksand';
     font-weight: bolder;
     position: relative;
