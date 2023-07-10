@@ -1,5 +1,5 @@
 
-<script>
+
     $(document).ready(function () {
         $(".accordion-title").click(function (e) {
             var accordionitem = $(this).attr("data-tab");
@@ -25,4 +25,3 @@
                 .removeClass("chevron-top");
         });
 });
-</script>
